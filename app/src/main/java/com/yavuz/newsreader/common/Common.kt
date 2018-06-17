@@ -8,7 +8,7 @@ import com.yavuz.newsreader.remote.RetrofitClient
  */
 object Common{
     val BASE_URL="https://newsapi.org/"
-    val API_KEY="0eb5a3e4b24b4cddb101e534b5ca2187"
+    val API_KEY="your_api_key"
 
     val newsService:NewsService
     get()=RetrofitClient.getClient(BASE_URL).create(NewsService::class.java)
